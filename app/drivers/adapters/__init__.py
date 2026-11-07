@@ -1,0 +1,1 @@
+"""Simulator-specific connection adapters."""

@@ -1,0 +1,474 @@
+{
+  "project": "Huawei NetOps MCP",
+  "version": "1.0.4",
+  "release": "clean-cross-platform-source",
+  "generated_at_utc": "2026-11-07T10:54:02.743776+00:00",
+  "file_count_excluding_manifest": 89,
+  "manifest_self_hash_excluded": true,
+  "test_result": "137 passed",
+  "python_runtime_support": "3.11, 3.12",
+  "validation_environment_note": "Build/test container uses Python 3.13.5; Windows PowerShell, DeepSeek Harness CLI and real network devices were unavailable for runtime integration tests.",
+  "excluded_runtime_data": [
+    ".env",
+    "data/",
+    "logs/",
+    "backups/",
+    "SQLite databases/WAL/SHM",
+    "Fernet keys",
+    "device credentials",
+    "real device output",
+    "__pycache__/",
+    "*.pyc",
+    ".venv/",
+    "build/",
+    "dist/",
+    "*.egg-info/"
+  ],
+  "files": [
+    {
+      "path": ".env.example",
+      "size_bytes": 721,
+      "sha256": "077d3fbc7843b6e3200f8c1e221561bd2adfc198a135b9e43426598bc155cbad"
+    },
+    {
+      "path": ".gitignore",
+      "size_bytes": 349,
+      "sha256": "ec412f58493aef472b9b805ebe4880b9d2e5f4148ab69889e3268e144eceb376"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "size_bytes": 1915,
+      "sha256": "199a82cc4a07bf3dd69ec28c4820ee6d5c3ce4fe887714f7e5ac8aee58eb43aa"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 5976,
+      "sha256": "372c773a2dcb1d15087ae295c295bd4b47c69b2af801212bc7c19ed7db671c46"
+    },
+    {
+      "path": "START-NETOPS-LINUX.sh",
+      "size_bytes": 140,
+      "sha256": "177f0a68771d599229435fbd40e2f843d1769effe83649b991cd792b1a947166"
+    },
+    {
+      "path": "START-NETOPS-WINDOWS.bat",
+      "size_bytes": 765,
+      "sha256": "6fbe33c29894e45a6b2d72f17ca731ce203d380307cdcef7bd7c36c9e9dc8997"
+    },
+    {
+      "path": "app/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "app/cli.py",
+      "size_bytes": 2895,
+      "sha256": "60ef84f16390426ce123e7f273acc66bba26ac3f41ebe1f96667ebe0e9ad5791"
+    },
+    {
+      "path": "app/config.py",
+      "size_bytes": 915,
+      "sha256": "2ea4dfb45d8591f3db970f6944488e1ffcfcee3556bd8acb8e39f7a08b6d4fee"
+    },
+    {
+      "path": "app/drivers/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "app/drivers/adapters/__init__.py",
+      "size_bytes": 46,
+      "sha256": "e873c275f8b270f4d43b4ab21fffe8f98e59a98c3065ca8c375b5781ac2d1bd4"
+    },
+    {
+      "path": "app/drivers/adapters/base.py",
+      "size_bytes": 263,
+      "sha256": "c18cc344937f78979acb368bd74903cdca159e0afad74ecee0ceaf66e1e5f456"
+    },
+    {
+      "path": "app/drivers/adapters/ensp.py",
+      "size_bytes": 1057,
+      "sha256": "56f8fdd3f1d022bbc72242164fae9863d51b2bcd60c8e70b6f337d1d852f955b"
+    },
+    {
+      "path": "app/drivers/adapters/ensp_pro.py",
+      "size_bytes": 1149,
+      "sha256": "7db11fc5c734e554739838b243b342fcf8167f84acc0af776e271ed8a9ce63b5"
+    },
+    {
+      "path": "app/drivers/adapters/factory.py",
+      "size_bytes": 991,
+      "sha256": "6bd62bfd825303f940550cae36d7672954ff49ef5ac36185a56b70723e82338c"
+    },
+    {
+      "path": "app/drivers/base.py",
+      "size_bytes": 238,
+      "sha256": "035f98e4a736bc0504a39f9cc0a6711f65200eaaa96e754ac9183e8df24754ef"
+    },
+    {
+      "path": "app/drivers/factory.py",
+      "size_bytes": 536,
+      "sha256": "cfcf938eaa2ca9ae25e246da1edcf4644fc31948f4b7e6b6eb8aed17848e94fb"
+    },
+    {
+      "path": "app/drivers/ssh_cli.py",
+      "size_bytes": 3142,
+      "sha256": "d60c21fdaf3fb369758690fa44618d97858b6c5966b149fea09d5c4e42ca625e"
+    },
+    {
+      "path": "app/drivers/telnet_cli.py",
+      "size_bytes": 2160,
+      "sha256": "1c3ba93c9ea2f99988d5de9d06bc9cd42f06c2e8c2b88c5b6f83ca6dd46e655a"
+    },
+    {
+      "path": "app/main.py",
+      "size_bytes": 998,
+      "sha256": "f43cd02d8d5c9a7d318b74d854c01a8c6352847c09bac0161eaf81aad8322849"
+    },
+    {
+      "path": "app/mcp_tools/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "app/mcp_tools/_coerce.py",
+      "size_bytes": 1816,
+      "sha256": "8b19db8edbac5e67f55e8496c3b8429a7c07e666eee8d2df8c573b5f09b15c8e"
+    },
+    {
+      "path": "app/mcp_tools/advanced_tools.py",
+      "size_bytes": 5607,
+      "sha256": "e373c45e667d415c6461e4583ab08ca775f26e182a512f4662c7d2741ad5b73f"
+    },
+    {
+      "path": "app/mcp_tools/change_tools.py",
+      "size_bytes": 3587,
+      "sha256": "66813e1d3ecd4d58ab85ae6dc951afdd4b5504e3f7e508a377603fba83fc9538"
+    },
+    {
+      "path": "app/mcp_tools/command_tools.py",
+      "size_bytes": 3695,
+      "sha256": "41351e466f4a0cf7d241ae607596e8692bcc8e9d32840fa9b35c0e68012d34f7"
+    },
+    {
+      "path": "app/mcp_tools/device_tools.py",
+      "size_bytes": 1328,
+      "sha256": "d4152ea991ba8161a34367ab37b35a6d5d871e616ad7f06331612ca93db51515"
+    },
+    {
+      "path": "app/mcp_tools/diagnostic_tools.py",
+      "size_bytes": 1649,
+      "sha256": "0b88a60b1bb8ff6491974c85564eb2153fefc05d540efc9681bcb2e95afad11c"
+    },
+    {
+      "path": "app/mcp_tools/terminal_tools.py",
+      "size_bytes": 4786,
+      "sha256": "3c131fdbaf8865ee4fabfface4034e51e3727b99d39b8dd705c6b04013e444b8"
+    },
+    {
+      "path": "app/models.py",
+      "size_bytes": 3566,
+      "sha256": "8440e5fc8c9584a143a4f99fb91e477109b51fafc3cc2600caf3ad68383d1e3a"
+    },
+    {
+      "path": "app/security/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "app/security/command_secrets.py",
+      "size_bytes": 2721,
+      "sha256": "4327fdac43f6dc3d97e4cb81e8c3c7c78d7087dac78f74a32745d4180b3aa4d1"
+    },
+    {
+      "path": "app/security/config_commands.py",
+      "size_bytes": 1168,
+      "sha256": "97917b56ea264c8d04c6f08b546ae71c9707f415d31591b917b3477b7b3a9f03"
+    },
+    {
+      "path": "app/security/credentials.py",
+      "size_bytes": 1424,
+      "sha256": "a549fbdb9d13b1f7b3437c086d55f0045cc5eba26b68e22e1782fec1ec356612"
+    },
+    {
+      "path": "app/security/device_output.py",
+      "size_bytes": 1830,
+      "sha256": "89b819687b8f36af62e9409785c6932caec47c7762943852925f9e216a63fab8"
+    },
+    {
+      "path": "app/security/policy.py",
+      "size_bytes": 2957,
+      "sha256": "7659a3ecfa9b25224a651cf12889694fa1d0c8c89294db173748df82e22b8d7c"
+    },
+    {
+      "path": "app/security/rbac.py",
+      "size_bytes": 2034,
+      "sha256": "324f3c3f7da383cea46ca3d129737266cb19f1fb10f7fde9d348bbace742bbbc"
+    },
+    {
+      "path": "app/security/redaction.py",
+      "size_bytes": 2656,
+      "sha256": "2b894ee859fa574d86862a5aa73a629d511d30866360caf61a7e6255a8455eb7"
+    },
+    {
+      "path": "app/services/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "app/services/batch_service.py",
+      "size_bytes": 7999,
+      "sha256": "ca993148458387c96741de12364f3747ba0a8bab7d7e3e9d6318a06373ae6d11"
+    },
+    {
+      "path": "app/services/capabilities.py",
+      "size_bytes": 3497,
+      "sha256": "5bf7e58ea63e0a658279aba570d33b1e4d9b10b1d24545bda8cd4c8954b9f37c"
+    },
+    {
+      "path": "app/services/change_jobs.py",
+      "size_bytes": 2758,
+      "sha256": "c2b8d517462524a8d7a6cab165d161558a5332eff146e54c651e027cc0fa5704"
+    },
+    {
+      "path": "app/services/config_diff.py",
+      "size_bytes": 2973,
+      "sha256": "368e162ae33516cdb9e2c446ddd01d8fae5a4caa0f39d2c0a3b67deb16a8f4fb"
+    },
+    {
+      "path": "app/services/config_templates.py",
+      "size_bytes": 8127,
+      "sha256": "070d88d0f07e487f9755240698bc6bf6453735b2a2935e0c3714d7b05fb64daf"
+    },
+    {
+      "path": "app/services/device_service.py",
+      "size_bytes": 25126,
+      "sha256": "e4b338e93493d1910ae67ab38bc79b23713364ef5deb952b2c6188216700ec01"
+    },
+    {
+      "path": "app/services/rollback_worker.py",
+      "size_bytes": 3550,
+      "sha256": "54cb9bc25249aebecdd6bfb068fd162c079900ee16417a58559afa6b2a36f288"
+    },
+    {
+      "path": "app/services/terminal_service.py",
+      "size_bytes": 9692,
+      "sha256": "109f52b67d93a8354d3270d818227080cd2fe8388ec0b1742546ae367cc5cb35"
+    },
+    {
+      "path": "app/services/verification.py",
+      "size_bytes": 6009,
+      "sha256": "9d0a3a0f2596b8220c3bb7eb8b6bd053b57f4088a5c46702cc90c74f79880b50"
+    },
+    {
+      "path": "app/storage.py",
+      "size_bytes": 24821,
+      "sha256": "6ec8ca168791f330c132e6ce74fef0a31c6db50dea036f49a5dfa0847b252d3f"
+    },
+    {
+      "path": "docs/CODE_REVIEW.md",
+      "size_bytes": 4644,
+      "sha256": "5054ce147da36170440bc6aa5a49e51868cd9e2490ea9531ca83b7bdddf5c754"
+    },
+    {
+      "path": "docs/DEEPSEEK_HARNESS.md",
+      "size_bytes": 3534,
+      "sha256": "69c5d121f4850af18a583becd20c8e37f0f6790d01d4685d44fb7771917272ad"
+    },
+    {
+      "path": "docs/ENSP_PRO.md",
+      "size_bytes": 4320,
+      "sha256": "45eca903ce1ff3b9dc1f38f822a6dd707e43bedb271dfaa8479ae3f9e72fa19d"
+    },
+    {
+      "path": "docs/INSTALL.md",
+      "size_bytes": 2916,
+      "sha256": "4c63f995b4b881047c1b81219cd1c7a50d758cc04a96d493c64fb4051df7f9b6"
+    },
+    {
+      "path": "docs/ROLLBACK.md",
+      "size_bytes": 7071,
+      "sha256": "0bcb7ba5847d19d9eb8f298d4324503be46857aa5dd8b5badb16d732634d5f00"
+    },
+    {
+      "path": "docs/SECURITY.md",
+      "size_bytes": 6084,
+      "sha256": "d70e5ceeaa186f62edf9cbdaf95d313ed49d264ec02f2285b204784da703fd58"
+    },
+    {
+      "path": "docs/SIMULATOR_ADAPTERS.md",
+      "size_bytes": 2074,
+      "sha256": "2f7a884e4d829987c81cbc33fa6bb8b33c67022b97f8e5b97091ac23feb07900"
+    },
+    {
+      "path": "docs/TOOLS.md",
+      "size_bytes": 5845,
+      "sha256": "bbd03f19e60353dd6bc7e3f3cfec370e1f2d6d9c73b88dd7c4c03672df3073ec"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "size_bytes": 5371,
+      "sha256": "c0e418a7d4b79fbb9381c828f575b6cd2a431936595ff561bc069e43ce36b52e"
+    },
+    {
+      "path": "pyproject.toml",
+      "size_bytes": 887,
+      "sha256": "09ff501692854e18e38158a58d8a57f866114f4a3e5700631e94580fa08f1617"
+    },
+    {
+      "path": "scripts/bootstrap.py",
+      "size_bytes": 5935,
+      "sha256": "1f5706fee0126987a689c550a37f96e2003f9ece1cb0509ee6d99c21faa7bc2d"
+    },
+    {
+      "path": "scripts/configure-harness-dual.sh",
+      "size_bytes": 4987,
+      "sha256": "eeb181e16c4cfcf235f1cf89b49f56a7cae34c97af60be49184afbedd7a721b5"
+    },
+    {
+      "path": "scripts/install-core.sh",
+      "size_bytes": 1536,
+      "sha256": "51323946ec4451d1184c1e6ca08da609085a1dd264ddbc004778b414ae2e0eed"
+    },
+    {
+      "path": "scripts/install-harness-dual.ps1",
+      "size_bytes": 6933,
+      "sha256": "399ea81ef00e1944c41ec7338d7f7bcc353526cb2e4dddeeafacd842bc9effe8"
+    },
+    {
+      "path": "scripts/install.ps1",
+      "size_bytes": 3896,
+      "sha256": "020015e607b3ff6f766c843cf2a8bb2cae4847c954a1fff8864771126f7b2d38"
+    },
+    {
+      "path": "scripts/oneclick-linux.sh",
+      "size_bytes": 5362,
+      "sha256": "1af455ba2880764424705ae7e8bed20811427906857b6d81e15a094e0790bcdc"
+    },
+    {
+      "path": "scripts/oneclick-windows.ps1",
+      "size_bytes": 9972,
+      "sha256": "93877206346041dffdc9695fe0e3f74e132815ac7d1a80f7c28f261258a27631"
+    },
+    {
+      "path": "tests/conftest.py",
+      "size_bytes": 341,
+      "sha256": "b46d877be7fc0137300e366cdfa01116ed1e89db35a9977ffd3268db5bbdf219"
+    },
+    {
+      "path": "tests/test_apply_safety.py",
+      "size_bytes": 8195,
+      "sha256": "bc3c6779c7b4bb1f459608c176b8303d0fe78942f42711cf0824f6d4687ae3cf"
+    },
+    {
+      "path": "tests/test_batch_commands.py",
+      "size_bytes": 2492,
+      "sha256": "1b1d933283c4a72cc19496bd8c262b2f94e9139dfca1245e872278288ee8c8b9"
+    },
+    {
+      "path": "tests/test_batch_service.py",
+      "size_bytes": 6909,
+      "sha256": "e22c0aaf06a385071983e22a9819e10c931c68e16421a349636af4a6a743a131"
+    },
+    {
+      "path": "tests/test_bootstrap_safety.py",
+      "size_bytes": 3764,
+      "sha256": "175b902f861c326b0d9c683471bad2bb1bd3d6fdabced812a2e5cff9a9a0fbca"
+    },
+    {
+      "path": "tests/test_capabilities_and_templates.py",
+      "size_bytes": 3935,
+      "sha256": "e604358c4f7fcc9665acb5761f541f6a64f3db3b95860602ce2752d1e63363fd"
+    },
+    {
+      "path": "tests/test_change_jobs.py",
+      "size_bytes": 1413,
+      "sha256": "73251b0ee623de794a56940d454f9d596bf67c3e50771fca670b52d98db39529"
+    },
+    {
+      "path": "tests/test_config_approval_validation.py",
+      "size_bytes": 2124,
+      "sha256": "e6c41b4b9ceb91e1e3a0ab62ee2a0666d02cdbc1c6698728952593253c1088c1"
+    },
+    {
+      "path": "tests/test_config_command_normalization.py",
+      "size_bytes": 2811,
+      "sha256": "c9913a45380b3a751951c9a47e0ea01f9a739ee4b8c8c93fb4cf4a95061bcf1b"
+    },
+    {
+      "path": "tests/test_config_diff.py",
+      "size_bytes": 934,
+      "sha256": "c1ab00fe87c16e46dd34a040470fd79d6e2771e96ee2beff0932a0fc6379dcfb"
+    },
+    {
+      "path": "tests/test_device_credentials.py",
+      "size_bytes": 2814,
+      "sha256": "2ce73eb1b3b02a7f775fee11990cf09043b5f6b4cb3decb7fb41c8a59c454af0"
+    },
+    {
+      "path": "tests/test_device_output.py",
+      "size_bytes": 782,
+      "sha256": "89a1d254e89213ea6a3cf9a0041afd025be1c7ea818f2355652527dafad364b3"
+    },
+    {
+      "path": "tests/test_device_service_results.py",
+      "size_bytes": 2015,
+      "sha256": "e49d8e50120818f41d85f510be46a20b01415501d289e8d4a25b7557a61a5171"
+    },
+    {
+      "path": "tests/test_oneclick_scripts.py",
+      "size_bytes": 9381,
+      "sha256": "3049c6205004e2f59f941fe0c43c99b5305eb94f015efb7872bf5b8ea84863f0"
+    },
+    {
+      "path": "tests/test_policy.py",
+      "size_bytes": 2343,
+      "sha256": "1c37d3a72982c892157589cf83c487e5283df73680c5c6e6f806288f63fe64fe"
+    },
+    {
+      "path": "tests/test_rbac_and_dual_approval.py",
+      "size_bytes": 2442,
+      "sha256": "19221d4eed89a7d736f5afd597d798a70e914a0be8bb237dd140314e789c7ef4"
+    },
+    {
+      "path": "tests/test_rollback_storage.py",
+      "size_bytes": 1071,
+      "sha256": "80e2f2036d927a34af005ee8b8047a1dedbdb211abac50558787d7ffcfe1a206"
+    },
+    {
+      "path": "tests/test_secret_storage_and_redaction.py",
+      "size_bytes": 3958,
+      "sha256": "52400542cba29463ce60a18fc28ee5ac4f20f241cb6be289cc9692851cfa8787"
+    },
+    {
+      "path": "tests/test_simulator_adapters.py",
+      "size_bytes": 1404,
+      "sha256": "baea95511f268faaa08cd449ba265d73a0bab688454293a9b50ba0ef34901310"
+    },
+    {
+      "path": "tests/test_storage.py",
+      "size_bytes": 1055,
+      "sha256": "b25739f63651638290a915fbe042cd33ac3d3645e216afb121692d78a0ce314b"
+    },
+    {
+      "path": "tests/test_storage_progress.py",
+      "size_bytes": 10705,
+      "sha256": "2d43c03a89607fc670218bda07d512ab26e6508750a1aebfd0957c680ad0e652"
+    },
+    {
+      "path": "tests/test_terminal_policy.py",
+      "size_bytes": 620,
+      "sha256": "ada6a1eb785acee9212a2fee20f3d533ad517dbd3027cad98cb59a1dcf2d8103"
+    },
+    {
+      "path": "tests/test_terminal_sessions.py",
+      "size_bytes": 4685,
+      "sha256": "7f018426f80fb38dbb48f2d9ea891ba2543706ccc912bd6600323a00aaa36429"
+    },
+    {
+      "path": "tests/test_verification_assertions.py",
+      "size_bytes": 2434,
+      "sha256": "c49cc3c746dc6fbf0c964f429423961ffc7df525f345bba7a833f945885b6765"
+    }
+  ]
+}
